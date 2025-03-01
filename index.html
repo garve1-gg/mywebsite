@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Malware</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .language-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .language-btn {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .language-btn:hover {
+            background-color: white;
+            color: #ff0000;
+        }
+        
+        .header-title{
+            font-size: 100px;
+            font-weight: bold;
+            font-family: Fantasy, Copperplate;
+            margin-bottom: 0%;
+            margin-top: 0%;
+            letter-spacing: 10px;
+            text-decoration: underline;
+            text-decoration-color: #ffffff;
+            text-underline-offset: 10px;
+        }
+
+        .header-description{
+            margin-top: 0%;
+            margin-bottom: 0%;
+            text-decoration: underline;
+            text-decoration-color: #ffffff;
+            text-underline-offset: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .malware-section {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-icon {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            opacity: 0.7;
+        }
+
+        .warning {
+            background-color: #ff3333;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .github-link {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .github-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="language-switch">
+            <button class="language-btn" onclick="toggleLanguage()">EN</button>
+        </div>
+        <h1 class="header-title" data-cs="Malware Portál" data-en="Malware Portal">Malware Portál</h1>
+        <p class="header-description" data-cs="Vzdělávací a stahovací zdroj malwaru" data-en="Educational and download source for malware">Vzdělávací a stahovací zdroj malwaru</p>
+    </header>
+
+    <div class="container">
+        <div class="warning">
+            <h2 data-cs="⚠️ Upozornění" data-en="⚠️ Warning">⚠️ Upozornění</h2>
+            <p data-cs="Tento web slouží pouze pro vzdělávací účely. Použití malwaru k poškození systémů je nelegální." data-en="This website is for educational purposes only. Using malware to damage systems is illegal.">Tento web slouží pouze pro vzdělávací účely. Použití malwaru k poškození systémů je nelegální.</p>
+            <img src="Den-icon.png" alt="Security" class="section-icon">
+        </div>
+
+        <div class="malware-section">
+            <h2>Malware</h2>
+            <p data-cs="Kolekce malwarů pro testování zabezpečení systémů. Obsahuje různé typy malwaru pro studijní účely." data-en="Collection of malware for testing system security. Contains various types of malware for study purposes.">Kolekce malwarů pro testování zabezpečení systémů. Obsahuje různé typy malwaru pro studijní účely.</p>
+            <a href="https://github.com/garve1-gg/malware" target="_blank" class="github-link" data-cs="Zobrazit na GitHubu" data-en="View on GitHub">Zobrazit na GitHubu</a>
+            <img src="Mal-icon.png" alt="Malware" class="section-icon">
+        </div>
+
+        <div class="malware-section">
+            <h2 data-cs="Co je malware?" data-en="What is malware?">Co je malware?</h2>
+            <p data-cs="Malware je škodlivý software navržený k poškození počítačových systémů. Hlavní typy zahrnují:" data-en="Malware is malicious software designed to damage computer systems. Main types include:">Malware je škodlivý software navržený k poškození počítačových systémů. Hlavní typy zahrnují:</p>
+            <ul>
+                <li data-cs="Viry" data-en="Viruses">Viry</li>
+                <li data-cs="Trojské koně" data-en="Trojan Horses">Trojské koně</li>
+                <li data-cs="Ransomware" data-en="Ransomware">Ransomware</li>
+                <li data-cs="Spyware" data-en="Spyware">Spyware</li>
+                <li data-cs="KeyLoggery" data-en="KeyLoggers">KeyLoggery</li>
+            </ul>
+            <img src="Search-icon.png" alt="Question" class="section-icon">
+        </div>
+
+        <div class="malware-section">
+            <h2 data-cs="Bezpečnostní Tipy" data-en="Security Tips">Bezpečnostní Tipy</h2>
+            <p data-cs="Pro ochranu před malwarem:" data-en="To protect against malware:">Pro ochranu před malwarem:</p>
+            <ul>
+                <li data-cs="Používejte antivirový software" data-en="Use antivirus software">Používejte antivirový software</li>
+                <li data-cs="Pravidelně aktualizujte systém" data-en="Regularly update your system">Pravidelně aktualizujte systém</li>
+                <li data-cs="Nestahujte soubory z nedůvěryhodných zdrojů" data-en="Don't download files from untrusted sources">Nestahujte soubory z nedůvěryhodných zdrojů</li>
+                <li data-cs="Zálohujte důležitá data" data-en="Backup important data">Zálohujte důležitá data</li>
+            </ul>
+            <img src="Protect-icon.png" alt="Security" class="section-icon">
+        </div>
+    </div>
+
+    <script>
+        // Přidání animace při načtení stránky
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.malware-section');
+            sections.forEach((section, index) => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'all 0.5s ease';
+                
+                setTimeout(() => {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }, 200 * index);
+            });
+        });
+
+        // Přepínání jazyků
+        function toggleLanguage() {
+            const currentLang = document.documentElement.lang;
+            const elements = document.querySelectorAll('[data-cs][data-en]');
+            const langButton = document.querySelector('.language-btn');
+
+            if (currentLang === 'cs') {
+                document.documentElement.lang = 'en';
+                elements.forEach(element => {
+                    element.textContent = element.getAttribute('data-en');
+                });
+                langButton.textContent = 'CS';
+            } else {
+                document.documentElement.lang = 'cs';
+                elements.forEach(element => {
+                    element.textContent = element.getAttribute('data-cs');
+                });
+                langButton.textContent = 'EN';
+            }
+        }
+    </script>
+</body>
+</html>
