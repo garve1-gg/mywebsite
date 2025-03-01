@@ -46,12 +46,12 @@
         }
         
         .header-title{
-            font-size: 100px;
+            font-size: clamp(40px, 8vw, 100px);
             font-weight: bold;
             font-family: Fantasy, Copperplate;
             margin-bottom: 0%;
             margin-top: 0%;
-            letter-spacing: 10px;
+            letter-spacing: clamp(5px, 1vw, 10px);
             text-decoration: underline;
             text-decoration-color: #ffffff;
             text-underline-offset: 10px;
@@ -63,12 +63,14 @@
             text-decoration: underline;
             text-decoration-color: #ffffff;
             text-underline-offset: 10px;
+            font-size: clamp(16px, 2vw, 20px);
         }
 
         .container {
+            width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 1rem;
         }
 
         .malware-section {
@@ -83,8 +85,8 @@
             position: absolute;
             bottom: 10px;
             right: 10px;
-            width: 50px;
-            height: 50px;
+            width: clamp(30px, 5vw, 50px);
+            height: auto;
             opacity: 0.7;
         }
 
@@ -106,10 +108,56 @@
             border-radius: 5px;
             margin: 10px 0;
             transition: background-color 0.3s;
+            font-size: clamp(14px, 1.5vw, 16px);
         }
 
         .github-link:hover {
             background-color: #45a049;
+        }
+
+        /* Responzivní styly pro mobilní zařízení */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+
+            .language-switch {
+                top: 10px;
+                right: 10px;
+            }
+
+            .container {
+                width: 95%;
+                padding: 0.5rem;
+            }
+
+            .malware-section {
+                padding: 15px;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            .section-icon {
+                bottom: 5px;
+                right: 5px;
+            }
+        }
+
+        /* Responzivní styly pro větší monitory */
+        @media screen and (min-width: 1920px) {
+            .container {
+                max-width: 1600px;
+            }
+
+            body {
+                font-size: 18px;
+            }
+
+            .malware-section {
+                padding: 30px;
+            }
         }
     </style>
 </head>
